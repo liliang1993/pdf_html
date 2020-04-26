@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>连续合约结算单样式</title>
+    <link href="reset.css" rel="stylesheet" type="text/css" />
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- settlement table start -->
+      <div class="settlement-header">
+        <h1>月结单 MONTHLY STATEMENT</h1>
+        <div class="page-wrap">页数 Pages: 1/9</div>
+      </div>
+      <!-- 平仓处理 -->
+      <div class="settlement-table">
+        <div class="settlement-table-title">平仓处理 Closed Transaction</div>
+        <table>
+          <table>
+            <thead>
+              <tr>
+                <th>单号</br>Ticket</th>
+                <th>项目</br>ltem</th>
+                <th>买</br>Buy</th>
+                <th>卖</br>Sell</th>
+                <th>开仓时间<br/>OpenTime</th>
+                <th>开仓价格<br/>price</th>
+                <th>平仓时间<br/>Close Time</th>
+                <th>平仓价格<br/>Price</th>
+                <th>佣金<br/>Commission</th>
+                <th>库存费<br/>P/O Swap</th>
+                <th>平仓盈亏<br/>Trade P/L</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td>
+                  USDJPY<br>
+                  USDJPY<br>
+                  USDJPY
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="subtotal-tr">
+                <td>Subtotal:</td>
+                <td>
+                  USDJPY<br>
+                  USDJPY<br>
+                  USDJPY
+                </td>
+                <td>需统计</td>
+                <td>需统计</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>需统计</td>
+                <td>需统计</td>
+                <td>需统计</td>
+              </tr>
+              <tr class="subtotal-tr">
+                <td>Subtotal:</td>
+                <td></td>
+                <td>需统计</td>
+                <td>需统计</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>需统计</td>
+                <td>需统计</td>
+                <td>需统计</td>
+              </tr>
+              <tr class="total-tr">
+                <td>Total:</td>
+                <td>
+                  USDJPY<br>
+                </td>
+                <td>需统计</td>
+                <td>需统计</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>需统计</td>
+                <td>需统计</td>
+                <td>需统计</td>
+              </tr>
+            </tbody>
+          </table>
+        </table>
+      </div>
+      <!-- 持仓明细 -->
+      <div class="settlement-table">
+        <div class="settlement-table-title">持仓明细 Open Trades</div>
+        <table>
+          <table>
+            <thead>
+              <tr>
+                <th>单号</br>Ticket</th>
+                <th>项目</br>ltem</th>
+                <th>买</br>Buy</th>
+                <th>卖</br>Sell</th>
+                <th>开仓时间<br/>OpenTime</th>
+                <th>开仓价格<br/>price</th>
+                <th>平仓时间<br/>Close Time</th>
+                <th>平仓价格<br/>Price</th>
+                <th>佣金<br/>Commission</th>
+                <th>库存费<br/>P/O Swap</th>
+                <th>平仓盈亏<br/>Trade P/L</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td>
+                  USDJPY<br>
+                  USDJPY<br>
+                  USDJPY
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="subtotal-tr">
+                <td>Subtotal:</td>
+                <td>
+                  USDJPY<br>
+                  USDJPY<br>
+                  USDJPY
+                </td>
+                <td>需统计</td>
+                <td>需统计</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>需统计</td>
+                <td>需统计</td>
+                <td>需统计</td>
+              </tr>
+              <tr class="subtotal-tr">
+                <td>Subtotal:</td>
+                <td></td>
+                <td>需统计</td>
+                <td>需统计</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>需统计</td>
+                <td>需统计</td>
+                <td>需统计</td>
+              </tr>
+              <tr class="total-tr">
+                <td>Total:</td>
+                <td>
+                  USDJPY<br>
+                </td>
+                <td>需统计</td>
+                <td>需统计</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>需统计</td>
+                <td>需统计</td>
+                <td>需统计</td>
+              </tr>
+            </tbody>
+          </table>
+        </table>
+      </div>
+       <!-- 挂单 Working Orders -->
+       <div class="settlement-table">
+        <div class="settlement-table-title">挂单 Working Orders </div>
+        <table>
+          <table>
+            <thead>
+              <tr>
+                <th>单号</br>Ticket</th>
+                <th>项目</br>ltem</th>
+                <th>买</br>Buy</th>
+                <th>卖</br>Sell</th>
+                <th>开仓时间<br/>OpenTime</th>
+                <th>开仓价格<br/>price</th>
+                <th>平仓时间<br/>Close Time</th>
+                <th>平仓价格<br/>Price</th>
+                <th>佣金<br/>Commission</th>
+                <th>库存费<br/>P/O Swap</th>
+                <th>平仓盈亏<br/>Trade P/L</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td>
+                  USDJPY<br>
+                  USDJPY<br>
+                  USDJPY
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="subtotal-tr">
+                <td>Subtotal:</td>
+                <td>
+                  USDJPY<br>
+                  USDJPY<br>
+                  USDJPY
+                </td>
+                <td>需统计</td>
+                <td>需统计</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>需统计</td>
+                <td>需统计</td>
+                <td>需统计</td>
+              </tr>
+              <tr class="subtotal-tr">
+                <td>Subtotal:</td>
+                <td></td>
+                <td>需统计</td>
+                <td>需统计</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>需统计</td>
+                <td>需统计</td>
+                <td>需统计</td>
+              </tr>
+              <tr class="total-tr">
+                <td>Total:</td>
+                <td>
+                  USDJPY<br>
+                </td>
+                <td>需统计</td>
+                <td>需统计</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>需统计</td>
+                <td>需统计</td>
+                <td>需统计</td>
+              </tr>
+            </tbody>
+          </table>
+        </table>
+      </div>
+      <!-- 账户状况 -->
+      <div class="settlement-table">
+        <div class="settlement-table-title">账户状况 ACCOUNT SUMMARY </div>
+        <table>
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th></th>
+                <th>Total Base (USD)</th> 
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>上一日余额</td>
+                <td>
+                  Previous Ledger Balance
+                </td>
+                <td>999</td>
+              </tr>
+              <tr>
+                <td>持仓盈亏</td>
+                <td>
+                  Floating P/L
+                </td>
+                <td>999</td>
+              </tr>
+              <tr>
+                <td>平仓盈亏</td>
+                <td>
+                  Trading P/L
+                </td>
+                <td>999</td>
+              </tr>
+              <tr>
+                <td>信用额度</td>
+                <td>
+                  Total Credit Facility
+                </td>
+                <td>999</td>
+              </tr>
+              <tr>
+                <td>资金往来</td>
+                <td>
+                  Deposit/Withdrawal
+                </td>
+                <td>999</td>
+              </tr>
+              <tr>
+                <td>权益</td>
+                <td>
+                  Equity
+                </td>
+                <td>999</td>
+              </tr>
+            </tbody>
+          </table>
+        </table>
+      </div>
+      <!-- 重要启事 IMPORTANT NOTICE -->
+      <div class="settlement-table">
+        <div class="settlement-table-title">重要启事 IMPORTANT NOTICE</div>
+       <div class="settlement-table-body">  
+          <p>1、本公司已按照客户的指示执行以上所有买卖，一切风险由客户自行承担。</p>
+          <p>2、请客户仔细审阅本结单，以确保发现任何错误并向本公司提出指正。如在2个工作日内未收到任何错误通知，本公司可视为本客户结单正确无误。</p> 
+          <p>3、客户应尽快将客户结单的电子版本下载储存至个人电脑中，或备存一份打印本，以作日后查询参考。</p> 
+          <p>4、买卖期货及期权合约亏损风险可能极大，若客户未按照本公司要求在指定时间之内缴付足够的保证金，本公司有权把客户的未平仓合约进行平仓而不需作出任何通知。</p>  
+          <p>5、经本公司进行之买卖，贵客户明白及同意本公司所收之佣金或回佣。经由本公司达成之每宗交易均须按交易所不时之规定缴纳任何征费，交易所已授权本公司根据交易所不时指定之规则收取适当征费。</p>  
+          <p>6、客户的真实资金以各币种金额为准，本公司会因客户帐户内持有货币的情况，如有需要，本公司会做出换汇要求。</p>  
+          <p>7、本结单同时作为本公司依据《证券及期货（成交单，户口结单及收据）规则》所要求，接受客户存款，收存期货、衍生产品或期权之凭据。</p> 
+          <p>8、阁下或贵公司如对本公司之服务有任何查询或投诉，请致电本公司客户服务热线：（371）65611820。</p> 
+       </div>
+      </div>
+    </div>
+  </body>
+</html>
+
