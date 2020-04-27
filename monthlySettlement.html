@@ -1,20 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>日结算单样式</title>
-    <link href="reset.css" rel="stylesheet" type="text/css" />
-    <link href="index.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <div class="container">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>日结算单样式</title>
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="top-infos">
+      <div class="top-infos__hd">
+        <div class="company-logo">
+
+        </div>
+        <div class="company-info">
+          <p>郑州易盛信息技术有限公司</p>
+          <p>ZhengzhouEsunnyInformationTechnologyCo,Ltd河南省郑州市郑东新区龙湖外环东路31号郑商所技术中心</p>
+          <p>31#LongHuWaiHuanRoad,ZhengZhouCity,Henan,P.RChina</p>
+          <p>电话Tel：+86-371-65611820</p>
+          <p>传真Fax：+86-371-65611885</p>
+        </div>
+      </div>
+      <div class="top-infos__ft">
+        <div class="top-infos__ft-left">
+          <p>客户账号 Client Code：00001</p>
+          <p>客户名称 Client Name：</p>
+          <p>客户地址 Address：</p>
+        </div>
+        <div class="top-infos__ft-right">
+          <p>结算日期 Statement Date：2020-04-01 至 2020-04-30
+          </p>
+          <p>制表日期 Current Date：2020-04-14</p>
+        </div>
+      </div>
+
       <!-- settlement table start -->
       <div class="settlement-header">
         <h1>日结单 DAILY STATEMENT</h1>
         <div class="page-wrap">页数 Pages: 1/9</div>
       </div>
-      <!-- 平仓处理 -->
+      <!-- 成交明细 -->
       <div class="settlement-table">
         <div class="settlement-table-title">成交明细 TRADE CONFIRMATION</div>
         <table>
@@ -25,85 +53,538 @@
                 <th>品种合约内容</br>Description</th>
                 <th>开/平</br>Open/Close</th>
                 <th>强平</br>Force</th>
-                <th>T+1<br/>T+1</th>
-                <th>买<br/>Buy</th>
-                <th>卖<br/>Sell</th>
-                <th>成交价<br/>Price</th>
-                <th>权利金<br/>Premium</th>
-                <th>手续费合计<br/>Total Charge</th>
-                <th>佣金<br/>Commission</th>
-                <th>交易费用<br/>Charge</th>
-                <th>征费<br/>Levy</th>
-                <th>NFA<br/>NFA</th>
+                <th>T+1
+                  <br/>T+1</th>
+                <th>买
+                  <br/>Buy</th>
+                <th>卖
+                  <br/>Sell</th>
+                <th>成交价
+                  <br/>Price</th>
+                <th>权利金
+                  <br/>Premium</th>
+                <th>手续费合计
+                  <br/>Total Charge</th>
+                <th>佣金
+                  <br/>Commission</th>
+                <th>交易费用
+                  <br/>Charge</th>
+                <th>征费
+                  <br/>Levy</th>
+                <th>NFA
+                  <br/>NFA</th>
               </tr>
             </thead>
-            <div>
-               <p>In compliance with your Instruction, we have executed the following as an agent for your account. The client will bear all risk associated with futures contracts trading.</p> 
+            <div class="risk-tips-wrap">
+              <div>In compliance with your Instruction, we have executed the following as an agent for your account. The client
+                will bear all risk associated with futures contracts trading.</div>
+              <div>本公司以代理人身份已按照客户的指示执行下列买卖，客户将承担所有期货合约交易的风险。</div>
+            </div>
+            <div class="explain-options">
+              <div class="explain-options__item">
+                Market:
+                <span>HKEX 香港交易所</span>
+              </div>
+              <div class="explain-options__item">
+                Product:
+                <span>HSI 恒生指数</span>
+              </div>
             </div>
             <tbody>
               <tr>
-                <td></td>
-                <td>
-                  USDJPY<br>
-                  USDJPY<br>
-                  USDJPY
-                </td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>INMOCKEGY(INMOCKEGY)</td>
+                <td>HSI/2004</td>
+                <td>O(开仓)</td>
+                <td>N(否)</td>
+                <td>Y(是)</td>
+                <td>2</td>
+                <td>23120</td>
+                <td>0.00</td>
+                <td>HKD-OTHER</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
               </tr>
-              <tr class="subtotal-tr">
-                <td>Subtotal:</td>
-                <td>
-                  USDJPY<br>
-                  USDJPY<br>
-                  USDJPY
-                </td>
-                <td>需统计</td>
-                <td>需统计</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>需统计</td>
-                <td>需统计</td>
-                <td>需统计</td>
+              <tr>
+                <td>INMOCKEGY(INMOCKEGY)</td>
+                <td>HSI/2004</td>
+                <td>O(开仓)</td>
+                <td>N(否)</td>
+                <td>Y(是)</td>
+                <td>2</td>
+                <td>23120</td>
+                <td>0.00</td>
+                <td>HKD-OTHER</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
               </tr>
-              <tr class="subtotal-tr">
-                <td>Subtotal:</td>
-                <td></td>
-                <td>需统计</td>
-                <td>需统计</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>需统计</td>
-                <td>需统计</td>
-                <td>需统计</td>
+              <tr>
+                <td>INMOCKEGY(INMOCKEGY)</td>
+                <td>HSI/2004</td>
+                <td>O(开仓)</td>
+                <td>N(否)</td>
+                <td>Y(是)</td>
+                <td>2</td>
+                <td>23120</td>
+                <td>0.00</td>
+                <td>HKD-OTHER</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
               </tr>
-              <tr class="total-tr">
-                <td>Total:</td>
-                <td>
-                  USDJPY<br>
-                </td>
-                <td>需统计</td>
-                <td>需统计</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>需统计</td>
-                <td>需统计</td>
-                <td>需统计</td>
+              <tr>
+                <td>INMOCKEGY(INMOCKEGY)</td>
+                <td>HSI/2004</td>
+                <td>O(开仓)</td>
+                <td>N(否)</td>
+                <td>Y(是)</td>
+                <td>2</td>
+                <td>23120</td>
+                <td>0.00</td>
+                <td>HKD-OTHER</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+              </tr>
+              <tr>
+                <td>INMOCKEGY(INMOCKEGY)</td>
+                <td>HSI/2004</td>
+                <td>O(开仓)</td>
+                <td>N(否)</td>
+                <td>Y(是)</td>
+                <td>2</td>
+                <td>23120</td>
+                <td>0.00</td>
+                <td>HKD-OTHER</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+              </tr>
+              <tr>
+                <td>INMOCKEGY(INMOCKEGY)</td>
+                <td>HSI/2004</td>
+                <td>O(开仓)</td>
+                <td>N(否)</td>
+                <td>Y(是)</td>
+                <td>2</td>
+                <td>23120</td>
+                <td>0.00</td>
+                <td>HKD-OTHER</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+              </tr>
+              <tr>
+                <td>INMOCKEGY(INMOCKEGY)</td>
+                <td>HSI/2004</td>
+                <td>O(开仓)</td>
+                <td>N(否)</td>
+                <td>Y(是)</td>
+                <td>2</td>
+                <td>23120</td>
+                <td>0.00</td>
+                <td>HKD-OTHER</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+              </tr>
+              <tr>
+                <td>INMOCKEGY(INMOCKEGY)</td>
+                <td>HSI/2004</td>
+                <td>O(开仓)</td>
+                <td>N(否)</td>
+                <td>Y(是)</td>
+                <td>2</td>
+                <td>23120</td>
+                <td>0.00</td>
+                <td>HKD-OTHER</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+              </tr>
+              <tr>
+                <td>INMOCKEGY(INMOCKEGY)</td>
+                <td>HSI/2004</td>
+                <td>O(开仓)</td>
+                <td>N(否)</td>
+                <td>Y(是)</td>
+                <td>2</td>
+                <td>23120</td>
+                <td>0.00</td>
+                <td>HKD-OTHER</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+              </tr>
+              <tr>
+                <td>INMOCKEGY(INMOCKEGY)</td>
+                <td>HSI/2004</td>
+                <td>O(开仓)</td>
+                <td>N(否)</td>
+                <td>Y(是)</td>
+                <td>2</td>
+                <td>23120</td>
+                <td>0.00</td>
+                <td>HKD-OTHER</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
               </tr>
             </tbody>
           </table>
         </table>
       </div>
-      <!-- 持仓明细 -->
+      <!-- 成交明细 -->
       <div class="settlement-table">
-        <div class="settlement-table-title">持仓明细 Open Trades</div>
+        <div class="settlement-table-title">成交明细 TRADE CONFIRMATION</div>
+        <table>
+          <table>
+            <thead>
+              <tr>
+                <th>上手</br>Upper</th>
+                <th>品种合约内容</br>Description</th>
+                <th>开/平</br>Open/Close</th>
+                <th>强平</br>Force</th>
+                <th>T+1
+                  <br/>T+1</th>
+                <th>买
+                  <br/>Buy</th>
+                <th>卖
+                  <br/>Sell</th>
+                <th>成交价
+                  <br/>Price</th>
+                <th>权利金
+                  <br/>Premium</th>
+                <th>手续费合计
+                  <br/>Total Charge</th>
+                <th>佣金
+                  <br/>Commission</th>
+                <th>交易费用
+                  <br/>Charge</th>
+                <th>征费
+                  <br/>Levy</th>
+                <th>NFA
+                  <br/>NFA</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>INMOCKEGY(INMOCKEGY)</td>
+                <td>HSI/2004</td>
+                <td>O(开仓)</td>
+                <td>N(否)</td>
+                <td>Y(是)</td>
+                <td>2</td>
+                <td>23120</td>
+                <td>0.00</td>
+                <td>HKD-OTHER</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+              </tr>
+              <tr>
+                <td>INMOCKEGY(INMOCKEGY)</td>
+                <td>HSI/2004</td>
+                <td>O(开仓)</td>
+                <td>N(否)</td>
+                <td>Y(是)</td>
+                <td>2</td>
+                <td>23120</td>
+                <td>0.00</td>
+                <td>HKD-OTHER</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+              </tr>
+              <tr>
+                <td>INMOCKEGY(INMOCKEGY)</td>
+                <td>HSI/2004</td>
+                <td>O(开仓)</td>
+                <td>N(否)</td>
+                <td>Y(是)</td>
+                <td>2</td>
+                <td>23120</td>
+                <td>0.00</td>
+                <td>HKD-OTHER</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+              </tr>
+              <tr>
+                <td>INMOCKEGY(INMOCKEGY)</td>
+                <td>HSI/2004</td>
+                <td>O(开仓)</td>
+                <td>N(否)</td>
+                <td>Y(是)</td>
+                <td>2</td>
+                <td>23120</td>
+                <td>0.00</td>
+                <td>HKD-OTHER</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+              </tr>
+              <tr>
+                <td>INMOCKEGY(INMOCKEGY)</td>
+                <td>HSI/2004</td>
+                <td>O(开仓)</td>
+                <td>N(否)</td>
+                <td>Y(是)</td>
+                <td>2</td>
+                <td>23120</td>
+                <td>0.00</td>
+                <td>HKD-OTHER</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+              </tr>
+              <tr>
+                <td>INMOCKEGY(INMOCKEGY)</td>
+                <td>HSI/2004</td>
+                <td>O(开仓)</td>
+                <td>N(否)</td>
+                <td>Y(是)</td>
+                <td>2</td>
+                <td>23120</td>
+                <td>0.00</td>
+                <td>HKD-OTHER</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+              </tr>
+              <tr>
+                <td>INMOCKEGY(INMOCKEGY)</td>
+                <td>HSI/2004</td>
+                <td>O(开仓)</td>
+                <td>N(否)</td>
+                <td>Y(是)</td>
+                <td>2</td>
+                <td>23120</td>
+                <td>0.00</td>
+                <td>HKD-OTHER</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+              </tr>
+              <tr>
+                <td>INMOCKEGY(INMOCKEGY)</td>
+                <td>HSI/2004</td>
+                <td>O(开仓)</td>
+                <td>N(否)</td>
+                <td>Y(是)</td>
+                <td>2</td>
+                <td>23120</td>
+                <td>0.00</td>
+                <td>HKD-OTHER</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+              </tr>
+              <tr>
+                <td>INMOCKEGY(INMOCKEGY)</td>
+                <td>HSI/2004</td>
+                <td>O(开仓)</td>
+                <td>N(否)</td>
+                <td>Y(是)</td>
+                <td>2</td>
+                <td>23120</td>
+                <td>0.00</td>
+                <td>HKD-OTHER</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+              </tr>
+              <tr>
+                <td>INMOCKEGY(INMOCKEGY)</td>
+                <td>HSI/2004</td>
+                <td>O(开仓)</td>
+                <td>N(否)</td>
+                <td>Y(是)</td>
+                <td>2</td>
+                <td>23120</td>
+                <td>0.00</td>
+                <td>HKD-OTHER</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+              </tr>
+              <tr>
+                <td>INMOCKEGY(INMOCKEGY)</td>
+                <td>HSI/2004</td>
+                <td>O(开仓)</td>
+                <td>N(否)</td>
+                <td>Y(是)</td>
+                <td>2</td>
+                <td>23120</td>
+                <td>0.00</td>
+                <td>HKD-OTHER</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+              </tr>
+              <tr>
+                <td>INMOCKEGY(INMOCKEGY)</td>
+                <td>HSI/2004</td>
+                <td>O(开仓)</td>
+                <td>N(否)</td>
+                <td>Y(是)</td>
+                <td>2</td>
+                <td>23120</td>
+                <td>0.00</td>
+                <td>HKD-OTHER</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+              </tr>
+              <tr>
+                <td>INMOCKEGY(INMOCKEGY)</td>
+                <td>HSI/2004</td>
+                <td>O(开仓)</td>
+                <td>N(否)</td>
+                <td>Y(是)</td>
+                <td>2</td>
+                <td>23120</td>
+                <td>0.00</td>
+                <td>HKD-OTHER</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+              </tr>
+              <tr>
+                <td>INMOCKEGY(INMOCKEGY)</td>
+                <td>HSI/2004</td>
+                <td>O(开仓)</td>
+                <td>N(否)</td>
+                <td>Y(是)</td>
+                <td>2</td>
+                <td>23120</td>
+                <td>0.00</td>
+                <td>HKD-OTHER</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+              </tr>
+              <tr>
+                <td>INMOCKEGY(INMOCKEGY)</td>
+                <td>HSI/2004</td>
+                <td>O(开仓)</td>
+                <td>N(否)</td>
+                <td>Y(是)</td>
+                <td>2</td>
+                <td>23120</td>
+                <td>0.00</td>
+                <td>HKD-OTHER</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+              </tr>
+              <tr>
+                <td>INMOCKEGY(INMOCKEGY)</td>
+                <td>HSI/2004</td>
+                <td>O(开仓)</td>
+                <td>N(否)</td>
+                <td>Y(是)</td>
+                <td>2</td>
+                <td>23120</td>
+                <td>0.00</td>
+                <td>HKD-OTHER</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+              </tr>
+              <tr>
+                <td>INMOCKEGY(INMOCKEGY)</td>
+                <td>HSI/2004</td>
+                <td>O(开仓)</td>
+                <td>N(否)</td>
+                <td>Y(是)</td>
+                <td>2</td>
+                <td>23120</td>
+                <td>0.00</td>
+                <td>HKD-OTHER</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+              </tr>
+              <tr>
+                <td>INMOCKEGY(INMOCKEGY)</td>
+                <td>HSI/2004</td>
+                <td>O(开仓)</td>
+                <td>N(否)</td>
+                <td>Y(是)</td>
+                <td>2</td>
+                <td>23120</td>
+                <td>0.00</td>
+                <td>HKD-OTHER</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </table>
+      </div>
+
+      <div class="settlement-table">
+        <div class="settlement-table-title">成交明细 TRADE CONFIRMATION </div>
         <table>
           <table>
             <thead>
@@ -112,22 +593,29 @@
                 <th>项目</br>ltem</th>
                 <th>买</br>Buy</th>
                 <th>卖</br>Sell</th>
-                <th>开仓时间<br/>OpenTime</th>
-                <th>开仓价格<br/>price</th>
-                <th>平仓时间<br/>Close Time</th>
-                <th>平仓价格<br/>Price</th>
-                <th>佣金<br/>Commission</th>
-                <th>库存费<br/>P/O Swap</th>
-                <th>平仓盈亏<br/>Trade P/L</th>
+                <th>开仓时间
+                  <br/>OpenTime</th>
+                <th>开仓价格
+                  <br/>price</th>
+                <th>平仓时间
+                  <br/>Close Time</th>
+                <th>平仓价格
+                  <br/>Price</th>
+                <th>佣金
+                  <br/>Commission</th>
+                <th>库存费
+                  <br/>P/O Swap</th>
+                <th>平仓盈亏
+                  <br/>Trade P/L</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td></td>
                 <td>
-                  USDJPY<br>
-                  USDJPY<br>
                   USDJPY
+                  <br> USDJPY
+                  <br> USDJPY
                 </td>
                 <td></td>
                 <td></td>
@@ -136,9 +624,9 @@
               <tr class="subtotal-tr">
                 <td>Subtotal:</td>
                 <td>
-                  USDJPY<br>
-                  USDJPY<br>
                   USDJPY
+                  <br> USDJPY
+                  <br> USDJPY
                 </td>
                 <td>需统计</td>
                 <td>需统计</td>
@@ -166,7 +654,8 @@
               <tr class="total-tr">
                 <td>Total:</td>
                 <td>
-                  USDJPY<br>
+                  USDJPY
+                  <br>
                 </td>
                 <td>需统计</td>
                 <td>需统计</td>
@@ -182,97 +671,42 @@
           </table>
         </table>
       </div>
-       <!-- 挂单 Working Orders -->
-       <div class="settlement-table">
-        <div class="settlement-table-title">挂单 Working Orders </div>
-        <table>
-          <table>
-            <thead>
-              <tr>
-                <th>单号</br>Ticket</th>
-                <th>项目</br>ltem</th>
-                <th>买</br>Buy</th>
-                <th>卖</br>Sell</th>
-                <th>开仓时间<br/>OpenTime</th>
-                <th>开仓价格<br/>price</th>
-                <th>平仓时间<br/>Close Time</th>
-                <th>平仓价格<br/>Price</th>
-                <th>佣金<br/>Commission</th>
-                <th>库存费<br/>P/O Swap</th>
-                <th>平仓盈亏<br/>Trade P/L</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td></td>
-                <td>
-                  USDJPY<br>
-                  USDJPY<br>
-                  USDJPY
-                </td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr class="subtotal-tr">
-                <td>Subtotal:</td>
-                <td>
-                  USDJPY<br>
-                  USDJPY<br>
-                  USDJPY
-                </td>
-                <td>需统计</td>
-                <td>需统计</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>需统计</td>
-                <td>需统计</td>
-                <td>需统计</td>
-              </tr>
-              <tr class="subtotal-tr">
-                <td>Subtotal:</td>
-                <td></td>
-                <td>需统计</td>
-                <td>需统计</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>需统计</td>
-                <td>需统计</td>
-                <td>需统计</td>
-              </tr>
-              <tr class="total-tr">
-                <td>Total:</td>
-                <td>
-                  USDJPY<br>
-                </td>
-                <td>需统计</td>
-                <td>需统计</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>需统计</td>
-                <td>需统计</td>
-                <td>需统计</td>
-              </tr>
-            </tbody>
-          </table>
-        </table>
-      </div>
-      <!-- 账户状况 -->
+      <!-- 合约资料 -->
       <div class="settlement-table">
-        <div class="settlement-table-title">账户状况 ACCOUNT SUMMARY </div>
+        <div class="settlement-table-title">合约资料 CONTRACT INFORMATION</div>
         <table>
           <table>
             <thead>
               <tr>
-                <th></th>
-                <th></th>
-                <th>Total Base (USD)</th> 
+                <th>市场
+                  <br>Market
+                </th>
+                <th>品种合约内容
+                  <br>Description
+                </th>
+                <th>合约大小
+                  <br>Contract Multiplier
+                </th>
+                <th>
+                  买初始保证金
+                  <br>Buy Initial Margin
+                </th>
+                <th>
+                  买维持保证金
+                  <br>Buy Maint Margin
+                </th>
+                <th>
+                  卖初始保证金
+                  <br>Sell Initial Margin
+                </th>
+                <th>
+                  卖维持保证金
+                  <br>Sell Maint Margin
+                </th>
+                <th>
+                  币种
+                  <br>Currency
+                </th>
               </tr>
             </thead>
             <tbody>
@@ -325,18 +759,18 @@
       <!-- 重要启事 IMPORTANT NOTICE -->
       <div class="settlement-table">
         <div class="settlement-table-title">重要启事 IMPORTANT NOTICE</div>
-       <div class="settlement-table-body">  
+        <div class="settlement-table-body">
           <p>1、本公司已按照客户的指示执行以上所有买卖，一切风险由客户自行承担。</p>
-          <p>2、请客户仔细审阅本结单，以确保发现任何错误并向本公司提出指正。如在2个工作日内未收到任何错误通知，本公司可视为本客户结单正确无误。</p> 
-          <p>3、客户应尽快将客户结单的电子版本下载储存至个人电脑中，或备存一份打印本，以作日后查询参考。</p> 
-          <p>4、买卖期货及期权合约亏损风险可能极大，若客户未按照本公司要求在指定时间之内缴付足够的保证金，本公司有权把客户的未平仓合约进行平仓而不需作出任何通知。</p>  
-          <p>5、经本公司进行之买卖，贵客户明白及同意本公司所收之佣金或回佣。经由本公司达成之每宗交易均须按交易所不时之规定缴纳任何征费，交易所已授权本公司根据交易所不时指定之规则收取适当征费。</p>  
-          <p>6、客户的真实资金以各币种金额为准，本公司会因客户帐户内持有货币的情况，如有需要，本公司会做出换汇要求。</p>  
-          <p>7、本结单同时作为本公司依据《证券及期货（成交单，户口结单及收据）规则》所要求，接受客户存款，收存期货、衍生产品或期权之凭据。</p> 
-          <p>8、阁下或贵公司如对本公司之服务有任何查询或投诉，请致电本公司客户服务热线：（371）65611820。</p> 
-       </div>
+          <p>2、请客户仔细审阅本结单，以确保发现任何错误并向本公司提出指正。如在2个工作日内未收到任何错误通知，本公司可视为本客户结单正确无误。</p>
+          <p>3、客户应尽快将客户结单的电子版本下载储存至个人电脑中，或备存一份打印本，以作日后查询参考。</p>
+          <p>4、买卖期货及期权合约亏损风险可能极大，若客户未按照本公司要求在指定时间之内缴付足够的保证金，本公司有权把客户的未平仓合约进行平仓而不需作出任何通知。</p>
+          <p>5、经本公司进行之买卖，贵客户明白及同意本公司所收之佣金或回佣。经由本公司达成之每宗交易均须按交易所不时之规定缴纳任何征费，交易所已授权本公司根据交易所不时指定之规则收取适当征费。</p>
+          <p>6、客户的真实资金以各币种金额为准，本公司会因客户帐户内持有货币的情况，如有需要，本公司会做出换汇要求。</p>
+          <p>7、本结单同时作为本公司依据《证券及期货（成交单，户口结单及收据）规则》所要求，接受客户存款，收存期货、衍生产品或期权之凭据。</p>
+          <p>8、阁下或贵公司如对本公司之服务有任何查询或投诉，请致电本公司客户服务热线：（371）65611820。</p>
+        </div>
       </div>
     </div>
-  </body>
-</html>
+</body>
 
+</html>

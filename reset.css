@@ -34,6 +34,7 @@ select,
 textarea {
   font: 16px/1.2 tahoma, arial, \5b8b\4f53, sans-serif;
 }
+
 h1,
 h2,
 h3,
@@ -42,6 +43,7 @@ h5,
 h6 {
   font-size: 100%;
 }
+
 address,
 cite,
 dfn,
@@ -49,12 +51,14 @@ em,
 var {
   font-style: normal;
 }
+
 code,
 kbd,
 pre,
 samp {
   font-family: courier new, courier, monospace;
 }
+
 small {
   font-size: 12px;
 }
@@ -68,6 +72,7 @@ a {
   color: #001870;
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
 }
@@ -75,6 +80,7 @@ a:hover {
 sup {
   vertical-align: text-top;
 }
+
 sub {
   vertical-align: text-bottom;
 }
@@ -82,10 +88,12 @@ sub {
 legend {
   color: #000;
 }
+
 fieldset,
 img {
   border: none;
 }
+
 button,
 input,
 select,
